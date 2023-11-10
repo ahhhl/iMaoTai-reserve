@@ -8,8 +8,10 @@ on:
     branches: [ "master" ]
     paths:
       - '.github/workflows/**'
-  # schedule:
-  #   - cron: '20 0,1 * * *'
+  schedule:
+    - cron: '20 0,1 * * *'
+
+  workflow_dispatch:
 
 env:
   TZ: Asia/Shanghai
